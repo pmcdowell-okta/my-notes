@@ -28,6 +28,9 @@ Switch User Profile AWS CLI: `export AWS_PROFILE=user`
 [Amazon Upload Basic Lambda](./amazonLambdaUpload) <br/>
 Upload a basic Lambda Function using AWS CLI.
 
+[Amazon Misc Commands](./amazonLambdaMisc) <br/>
+Delete, list, and Mass Delete Lambda Functions
+
 ### Amazon Cloud Watch
 
 [Delete All Cloudwatch Logs](./amazonDeleteCloudLogs) <br/>
@@ -52,6 +55,9 @@ Common Commands you should know. *But often forget*
 
 [PHP Jwt Decode](./phpDecodeJwt) <br/>
 Decode JWT in php, this does not include verification code
+
+###Docker
+
 
 ### Bash Shell
 
