@@ -31,6 +31,11 @@ Set a Cookie on Lambda Edge.. In this case I was working to exchange a cookie fo
 [Lambda Edge Static Web Page](./lambdaEdgeStaticWebpage) <br/>
 Render a Static Web Page on Lambda Edge (ideally you would use an S3 Bucket, but this will get you started)
 
+### Amazon S3
+
+[Delete all S3 Buckets](./amazonDeleteS3Buckets) <br/>
+*Use at your own Risk*, but I used this often for testing
+
 ### PHP
 
 [PHP Jwt Decode](./phpDecodeJwt) <br/>
