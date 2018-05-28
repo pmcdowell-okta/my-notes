@@ -15,6 +15,10 @@ I experiemented with successfully running the Okta Login Widget on JSFiddle, wor
 of an example as I could create to show how to send a Bearer Token to a Server
 via CORS.
 
+[Javascript Promises](./javascriptPromises) <br/>
+**Promises** Promises were a bit tricky for me, I used this over and over again until 
+I felt comfortable with it. It also uses the ES5/6 **Fat Arrow** to abbreviate the functions.
+
 
 
 
