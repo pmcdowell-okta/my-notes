@@ -19,10 +19,22 @@ via CORS.
 **Promises** Promises were a bit tricky for me, I used this over and over again until 
 I felt comfortable with it. It also uses the ES5/6 **Fat Arrow** to abbreviate the functions.
 
+### Amazon Cloud Watch
+
+### Amazon Lambda Edge Functions
+[Delete All Cloudwatch Logs](./amazonDeleteCloudLogs) <br/>
+I use this often, even setup an Alias for it in Bash
+
 ### Amazon Lambda Edge Functions
 [Set Cookie on Amazon Lambda Edge](./lambdaEdgeSetCookie) <br/>
 Set a Cookie on Lambda Edge.. In this case I was working to exchange a cookie for a JWT. 
 
 [Lambda Edge Static Web Page](./lambdaEdgeStaticWebpage) <br/>
 Render a Static Web Page on Lambda Edge (ideally you would use an S3 Bucket, but this will get you started)
+
+### PHP
+
+[PHP Jwt Decode](./phpDecodeJwt) <br/>
+Decode JWT in php, this does not include verification code
+
 
