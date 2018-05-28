@@ -58,10 +58,13 @@ Decode JWT in php, this does not include verification code
 
 ### Docker
 
+[Docker Snapshot](./dockerSnapshot) <br/>
+Simple instructions to take a snapshot in Docker
+
 [Okta Agent Dockerfile](./oktaServer) <br/>
 This is a Centos Docker Image I used to run Okta LDAP and On-Premise Agent
 
 ### Bash Shell
 
-Do an For Loop : `for kk in `ls` ; do echo "Your Command" ; done
+Do a For Loop : `for kk in `ls` ; do echo "Your Command" ; done
 `
