@@ -58,6 +58,8 @@ Decode JWT in php, this does not include verification code
 
 ###Docker
 
+[Okta Agent Dockerfile](./oktaServer) <br/>
+This is a Centos Docker Image I used to run Okta LDAP and On-Premise Agent
 
 ### Bash Shell
 
