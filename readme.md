@@ -33,6 +33,9 @@ Render a Static Web Page on Lambda Edge (ideally you would use an S3 Bucket, but
 
 ### Amazon S3
 
+[Common S3 Commands you should know](./amazonS3CommonCommands) <br/>
+Common Commands you should know. *But often forget*
+
 [Delete all S3 Buckets](./amazonDeleteS3Buckets) <br/>
 *Use at your own Risk*, but I used this often for testing
 
