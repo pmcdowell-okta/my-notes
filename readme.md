@@ -21,7 +21,6 @@ I felt comfortable with it. It also uses the ES5/6 **Fat Arrow** to abbreviate t
 
 ### Amazon Cloud Watch
 
-### Amazon Lambda Edge Functions
 [Delete All Cloudwatch Logs](./amazonDeleteCloudLogs) <br/>
 I use this often, even setup an Alias for it in Bash
 
