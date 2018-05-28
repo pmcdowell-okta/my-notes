@@ -4,7 +4,7 @@ I had a bunch of notes I was keeping in Google Keep, what no one else could see 
 
 [starterHTML](./starterHTML) <br/>
 When starting with HTML from Scratch, this what what I use,
-it has a simple style sheet and Jquery
+it has a simple style sheet and **Jquery**
 ready to run.
 
 [Login Widget on JsFiddle](./loginWidgetJsfiddle) <br/>
@@ -18,6 +18,11 @@ via CORS.
 [Javascript Promises](./javascriptPromises) <br/>
 **Promises** Promises were a bit tricky for me, I used this over and over again until 
 I felt comfortable with it. It also uses the ES5/6 **Fat Arrow** to abbreviate the functions.
+
+### Okta
+
+[Add Key to Okta On Premise Agent/JRE](./oktaKeystore) <br/>
+Working with Okta On Premise Agent, and using HTTP(s), this step is required.
 
 ### Amazon basics
 
