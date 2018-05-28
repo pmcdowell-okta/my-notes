@@ -56,7 +56,7 @@ Common Commands you should know. *But often forget*
 [PHP Jwt Decode](./phpDecodeJwt) <br/>
 Decode JWT in php, this does not include verification code
 
-###Docker
+### Docker
 
 [Okta Agent Dockerfile](./oktaServer) <br/>
 This is a Centos Docker Image I used to run Okta LDAP and On-Premise Agent
