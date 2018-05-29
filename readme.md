@@ -71,5 +71,5 @@ This is a Centos Docker Image I used to run Okta LDAP and On-Premise Agent
 
 ### Bash Shell
 
-Do a For Loop : `for kk in `ls` ; do echo "Your Command" ; done
+Do a infinite For/Loop : `for kk in `ls` ; do echo "Your Command" ; done
 `
