@@ -69,6 +69,11 @@ Simple instructions to take a snapshot in Docker
 [Okta Agent Dockerfile](./oktaServer) <br/>
 This is a Centos Docker Image I used to run Okta LDAP and On-Premise Agent
 
+### GIT
+
+[Basic .gitignore file](./gitignore) <br/>
+This is the basic file I use for Git to ignore my .idea and other files.
+
 ### Bash Shell
 
 Do a infinite For/Loop : `for kk in `ls` ; do echo "Your Command" ; done
