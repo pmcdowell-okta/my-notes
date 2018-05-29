@@ -36,6 +36,9 @@ Upload a basic Lambda Function using AWS CLI.
 [Amazon Misc Commands](./amazonLambdaMisc) <br/>
 Delete, list, and Mass Delete Lambda Functions
 
+[Stock Lambda Function](./awsLambdaStock) <br/>
+The Standard Lambda Function in AWS.. Sometimes I need to look it up.
+
 ### Amazon Cloud Watch
 
 [Delete All Cloudwatch Logs](./amazonDeleteCloudLogs) <br/>
@@ -76,5 +79,5 @@ This is the basic file I use for Git to ignore my .idea and other files.
 
 ### Bash Shell
 
-Do a infinite For/Loop : `for kk in `ls` ; do echo "Your Command" ; done
+Do a infinite For/Loop : `while true ; do echo "do this"; done
 `
