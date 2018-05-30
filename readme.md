@@ -24,6 +24,11 @@ I felt comfortable with it. It also uses the ES5/6 **Fat Arrow** to abbreviate t
 [Add Key to Okta On Premise Agent/JRE](./oktaKeystore) <br/>
 Working with Okta On Premise Agent, and using HTTP(s), this step is required.
 
+### Angular
+
+[Angular Notes](./angularNotes) <br/>
+Getting started with Angular 5-ish. Notes to get me going
+
 ### Amazon basics
 
 Switch User Profile AWS CLI: `export AWS_PROFILE=user`
