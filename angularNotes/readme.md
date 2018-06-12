@@ -6,8 +6,14 @@ ng new ng5 --style=scss --routing
 `
 
 **Serve Pages on port 4200**<br/>
-`
+```
 ng serve
+```
+
+**Build**<br/>
+This is the command you will run to build the app for static server<br/>
+`
+ng build
 `
 
 **Make components**
@@ -31,7 +37,13 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch : 'full' },
   { path: 'home', component : HomeComponent },
   { path: 'about', component : AboutComponent },
+  { path: 'about/:id', component : AboutComponent }, //Pass Parameter
   { path: '**', component : PageNotFoundComponent },
 
 ];
 ```
+
+**ngOnInit**
+Invoked first time when initialized
+
+
