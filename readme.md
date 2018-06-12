@@ -26,10 +26,8 @@ Working with Okta On Premise Agent, and using HTTP(s), this step is required.
 
 ### AWS SAM (Server Application Model)
 
-
-[Add Key to Okta On Premise Agent/JRE](./oktaKeystore) <br/>
-Working with Okta On Premise Agent, and using HTTP(s), this step is required.
-
+[Getting going with SAM](./awsSam) <br/>
+Example I used to get me started with AWS SAM
 
 ### Angular
 
