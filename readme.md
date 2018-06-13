@@ -88,6 +88,9 @@ Decode JWT in php, this does not include verification code
 [Docker Snapshot](./dockerSnapshot) <br/>
 Simple instructions to take a snapshot in Docker
 
+[Docker Nginx Hacking Proxy](./dockerNginxHacking) <br/>
+Simple Reverse Proxy with Nginx using Docker
+
 [Okta Agent Dockerfile](./oktaServer) <br/>
 This is a Centos Docker Image I used to run Okta LDAP and On-Premise Agent
 
