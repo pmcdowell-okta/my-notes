@@ -76,6 +76,15 @@ Decode JWT in php, this does not include verification code
 
 ### Docker
 
+##### Basics 
+
+**Build Docker Image** `docker build -t pmcdowell/deletemeanytimne .`
+**Push to DockerHub** `docker push pmcdowell/deletemeanytimne`
+**Docker Rename** `docker rename my_container my_new_container`
+**Docker force Delete Image** `docker rmi a693c8a85fa7 -f`
+**Quick, run a PHP Server** `docker run -p 8000:80 -it -v "$PWD":/var/www/html php:7.0-apache /bin/bash -c "service apache2 start; bash"`
+
+
 [Docker Snapshot](./dockerSnapshot) <br/>
 Simple instructions to take a snapshot in Docker
 
