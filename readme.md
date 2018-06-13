@@ -100,6 +100,6 @@ This is the basic file I use for Git to ignore my .idea and other files.
 
 Do a infinite For/Loop : `while true ; do echo "do this"; done
 
-Reverse looking previous coommands: `[CTRL-r]` *MACOS* *(Thanks Joël for this trick)* <br/>
+Reverse looking previous coommands: `[CTRL-r]` *MacOS* *(Thanks Joël for this trick)* <br/>
 Goto Beginning of Line: `[CTRL-a]` *MacOS*
 `
