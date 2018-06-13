@@ -90,4 +90,6 @@ This is the basic file I use for Git to ignore my .idea and other files.
 ### Bash Shell
 
 Do a infinite For/Loop : `while true ; do echo "do this"; done
+
+Reverse looking previous coommands: `[CTRL-R]`
 `

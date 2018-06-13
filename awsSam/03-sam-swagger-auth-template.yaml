@@ -1,0 +1,87 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: An example serverless "Hello World2 " application with a custom authorizer.
+
+Parameters:
+  AutoPublishAliasName:
+    Type: String
+    Default: current
+    Description: The alias used for Auto Publishing
+  StageName:
+    Type: String
+    Default: prod
+    Description: The Lambda Function and API Gateway Stage
+  FunctionName:
+    Type: String
+    Default: Example
+    Description: The Lambda Function Name
+
+Outputs:
+  ExampleAPIUrl:
+    Value: !Sub "https://${ApiGateway}.execute-api.${AWS::Region}.amazonaws.com/${StageName}/"
+
+Resources:
+  ApiGateway:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+      DefinitionBody:
+        swagger: 2.0
+        info:
+          title:
+            Ref: AWS::StackName
+        securityDefinitions:
+          test-authorizer:
+            type: apiKey
+            name: Authorization
+            in: header
+            x-amazon-apigateway-authtype: custom
+            x-amazon-apigateway-authorizer:
+              type: token
+              authorizerUri:
+                Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${TestAuthorizerFunc.Arn}/invocations
+              authorizerResultTtlInSeconds: 5
+        paths:
+          "/":
+            get:
+              x-amazon-apigateway-integration:
+                httpMethod: post
+                type: aws_proxy
+                uri:
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloWorld.Arn}/invocations
+              responses: {}
+              security:
+                - test-authorizer: []
+
+  HelloWorld:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.6
+      CodeUri: ./HelloWorld
+      Events:
+        GetApi:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
+            RestApiId:
+                Ref: ApiGateway
+
+  TestAuthorizerFunc:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.6
+      CodeUri: ./TestAuthorizerFunc
+
+  TestAuthorizerFuncPerm:
+    Type: AWS::Lambda::Permission
+    DependsOn:
+      - ApiGateway
+      - TestAuthorizerFunc
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Ref: TestAuthorizerFunc
+      Principal: apigateway.amazonaws.com
