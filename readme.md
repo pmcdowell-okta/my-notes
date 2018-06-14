@@ -99,6 +99,11 @@ This is a Centos Docker Image I used to run Okta LDAP and On-Premise Agent
 [Basic .gitignore file](./gitignore) <br/>
 This is the basic file I use for Git to ignore my .idea and other files.
 
+### Security Stuff
+
+[Generate Self Signed Certificates](./securityCertificatesCreate) <br/>
+Script to make certificates
+
 ### Bash Shell
 
 Do a infinite For/Loop : `while true ; do echo "do this"; done
