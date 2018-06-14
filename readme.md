@@ -108,6 +108,14 @@ Script to make certificates
 
 Do a infinite For/Loop : `while true ; do echo "do this"; done
 
+Make symbolic Link : `ln -s /Users/mickeymouse/Box\ Sync/c-\=Code\=-/ code
+`
+
 Reverse looking previous coommands: `[CTRL-r]` *MacOS* *(Thanks Joël for this trick)* <br/>
 Goto Beginning of Line: `[CTRL-a]` *MacOS*
 `
+### Intellij / JetBrains
+
+**Surround code With** `[OPPTOIN] + [COMMAND] + t ` <br/>
+**Join lines** `[CTRL] + [SHIFT] +j` <br/>
+**Select words w/ keyboard** `[Shift]+[Option] (left/right) arrow`
