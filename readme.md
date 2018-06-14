@@ -119,3 +119,5 @@ Goto Beginning of Line: `[CTRL-a]` *MacOS*
 **Surround code With** `[OPPTOIN] + [COMMAND] + t ` <br/>
 **Join lines** `[CTRL] + [SHIFT] +j` <br/>
 **Select words w/ keyboard** `[Shift]+[Option] (left/right) arrow`
+**Vertical Selection CMD.exe style**  `[Option] , drag cursor`
+***Multi Cursor**  `[Option] + [Shift] , Click Away`
