@@ -32,6 +32,8 @@ Example I used to get me started with AWS SAM
 [More Simple Examples of using SAM / Cloudformation](./awsSam2) <br/>
 SAM takes a while to understand, still learning, refined what I was workign with.
 
+[AWS SAM/Cloudformation for Okta Rental Backend](./awsSamOktaRental) <br/>
+Example of how to use SAM/Cloudformation to deploy API Gateway on Amazon AWS **Will Add Authorizer soon**
 ### Angular
 
 [Angular Notes](./angularNotes) <br/>
