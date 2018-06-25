@@ -29,6 +29,9 @@ Working with Okta On Premise Agent, and using HTTP(s), this step is required.
 [Getting going with SAM](./awsSam) <br/>
 Example I used to get me started with AWS SAM
 
+[More Simple Examples of using SAM / Cloudformation](./awsSam2) <br/>
+SAM takes a while to understand, still learning, refined what I was workign with.
+
 ### Angular
 
 [Angular Notes](./angularNotes) <br/>
@@ -120,4 +123,4 @@ Goto Beginning of Line: `[CTRL-a]` *MacOS*
 **Join lines** `[CTRL] + [SHIFT] +j` <br/>
 **Select words w/ keyboard** `[Shift]+[Option] (left/right) arrow` <br/>
 **Vertical Selection CMD.exe style**  `[Option] , drag cursor` <br/>
-***Multi Cursor**  `[Option] + [Shift] , Click Away` <br/>
+**Multi Cursor**  `[Option] + [Shift] , Click Away` <br/>

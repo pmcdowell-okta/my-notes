@@ -1,0 +1,58 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: AWS SAM Tutorial
+Parameters:
+  Environment:
+    Type: String
+    Default: dev
+  StageName:
+    Type: String
+    Default: prod
+    Description: The Lambda Function and API Gateway Stage
+
+Outputs:
+  ExampleAPIUrl:
+    Value: !Sub "https://${HelloAPI}.execute-api.${AWS::Region}.amazonaws.com/${Environment}/"
+
+Resources:
+  HelloAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: !Sub ${Environment}
+      DefinitionBody:
+        swagger: 2.0
+        info:
+          title:
+            Ref: AWS::StackName
+        paths:
+          /test:
+            get:
+              x-amazon-apigateway-integration:
+                httpMethod: POST
+                type: aws_proxy
+                uri:
+                  !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloLambda.Arn}/invocations
+              responses: {}
+  HelloLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub HelloLambda-${Environment}
+      Handler: index.handler
+      Runtime: nodejs4.3 
+      CodeUri: src 
+      MemorySize: 128 
+      Timeout: 30
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess  
+      Events:
+        MyEndpoint:
+          Type: Api 
+          Properties:
+            Path: /test
+            Method: GET
+            RestApiId:
+              Ref: HelloAPI
+
+
+
