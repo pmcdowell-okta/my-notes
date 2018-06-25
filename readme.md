@@ -1,6 +1,6 @@
 # My Notes
 
-I had a bunch of notes I was keeping in Google Keep, what no one else could see or use, so I decided to put many of them up on GitHub.com so maybe other could find them useful.
+I had a bunch of notes I was keeping in Google Keep, that no one else could see or use, so I decided to put many of them up on GitHub.com so maybe other could find them useful.
 
 [starterHTML](./starterHTML) <br/>
 When starting with HTML from Scratch, this what what I use,
