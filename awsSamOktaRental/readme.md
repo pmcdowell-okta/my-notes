@@ -8,11 +8,11 @@ You will need to install the AWS CLI Tools, and install SAM. See my other tutori
 
 Create an **S3 Bucket** the command is: `aws s3 mb s3://oktarental123`
 
-####To deploy to this:
+#### To deploy to this:
 
 `./deploy.sh oktarental123 oktarental123 template.yaml`
 
-####Results:
+#### Results:
 ``` 
 Execute the following command to deploy the packaged template
 aws cloudformation deploy --template-file /Users/patrickmcdowell/Box Sync/c-=Code=-/cloudformationOktaRental/output.yaml --stack-name <YOUR STACK NAME>
@@ -30,7 +30,7 @@ To Delete the Stack use this command
 aws cloudformation delete-stack --stack-name oktarental123
 ```
 
-####Test:
+#### Test:
 
 You can test it with CURL, or use your browser, the valid URLs will be returned to you
 
