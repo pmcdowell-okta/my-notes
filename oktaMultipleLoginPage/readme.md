@@ -1,0 +1,82 @@
+### Host multiple page using SPA and Custom login page
+
+#### How to use this
+
+It's pretty basic, if you want to see the default login page just hit the URL.
+
+If you add a switch to your request like this `https://sso.oktapatrick.com?pony` 
+the source will look for a hidden **<div>** with the same name, and
+display that **<div>**.
+
+Just add your additional pages to the switch case, and you should be up an running.
+
+```
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+ <html>
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta name="robots" content="none"/>
+ 
+     <title>{{pageTitle}}</title>
+     {{{SignInWidgetResources}}}
+ </head>
+ <body>
+ <div id="default" style="display:none">
+     <div class="login-bg-image" style="background-image: {{bgImageUrl}}"></div>
+     <div id="okta-login-container"></div>
+ 
+     <!--
+         "OktaUtil" defines a global OktaUtil object
+         that contains methods used to complete the Okta login flow.
+      -->
+     {{{OktaUtil}}}
+ </div>
+ <div id="pony" style="display: none;">
+     <center>
+     <img src="https://github.com/pmcdowell-okta/my-notes/blob/master/oktaMultipleLoginPage/images/pony.png?raw=true"/>
+     </center>
+ </div>
+ 
+ <script type="text/javascript">
+     // "config" object contains default widget configuration
+     // with any custom overrides defined in your admin settings.
+     var config = OktaUtil.getSignInWidgetConfig();
+ 
+     // Render the Okta Sign-In Widget
+     var oktaSignIn = new OktaSignIn(config);
+     oktaSignIn.renderEl({ el: '#okta-login-container' },
+         OktaUtil.completeLogin,
+         function(error) {
+             // Logs errors that occur when configuring the widget.
+             // Remove or replace this with your own custom error handler.
+             console.log(error.message, error);
+         }
+     );
+ </script>
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script>
+     $( document).ready ( function() {
+         var currentUrl=window.location + '';
+         currentUrl= currentUrl.split("?");
+         console.log(currentUrl[1])
+         switch(currentUrl[1]) {
+             case "pony":
+                 console.log("Found it")
+                 $("#"+currentUrl[1]).show();
+ 
+                 break;
+             case "xxx":
+                 break;
+             default:
+                 console.log ("in default")
+                 $("#default").show();
+ 
+         }
+     })
+ </script>
+ </body>
+ </html>
+
+```
