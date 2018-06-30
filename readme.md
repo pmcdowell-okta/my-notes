@@ -21,6 +21,9 @@ I felt comfortable with it. It also uses the ES5/6 **Fat Arrow** to abbreviate t
 
 ### Okta
 
+[Custom Login page with SPA](./oktaMultipleLoginPage) <br/>
+Working with Okta On Pre
+
 [Add Key to Okta On Premise Agent/JRE](./oktaKeystore) <br/>
 Working with Okta On Premise Agent, and using HTTP(s), this step is required.
 
@@ -34,6 +37,10 @@ SAM takes a while to understand, still learning, refined what I was workign with
 
 [AWS SAM/Cloudformation for Okta Rental Backend](./awsSamOktaRental) <br/>
 Example of how to use SAM/Cloudformation to deploy API Gateway on Amazon AWS **Will Add Authorizer soon**
+
+[AWS ApiGateway, Anything goes Authorizer](./awsAnythingGoesAuthorizer) <br/>
+A Authorizer for Allowing/Denying Anything, for test
+
 ### Angular
 
 [Angular Notes](./angularNotes) <br/>
