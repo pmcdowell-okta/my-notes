@@ -44,6 +44,8 @@ Example of how to use SAM/Cloudformation to deploy API Gateway on Amazon AWS **W
 [AWS SAM/Cloudformation for Okta Rental Backend w/ Authorizer](./awsOktaRentalWithAuthorizer) <br/>
 Combining the above two examples, API Gateway w/ an Authorizer
 
+[AWS LaunchStack and Share!](./awsLaunchStack) <br/>
+Now get **Fancy** create a new **[LaunchStack]** Button on your code, and share your code 
 ### Angular
 
 [Angular Notes](./angularNotes) <br/>
