@@ -1,0 +1,118 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: Yes you can use SAM to create an Authorizer
+Parameters:
+  Environment:
+    Type: String
+    Default: dev
+  StageName:
+    Type: String
+    Default: prod
+    Description: The Lambda Function and API Gateway Stage
+
+Outputs:
+  ExampleAPIUrl:
+    Value: !Sub "https://${HelloAPI}.execute-api.${AWS::Region}.amazonaws.com/${Environment}/"
+
+Resources:
+  HelloAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: !Sub ${Environment}
+      DefinitionBody:
+        swagger: 2.0
+        info:
+          title:
+            Ref: AWS::StackName
+        securityDefinitions:
+          test-authorizer:
+            type: apiKey
+            name: Authorization
+            in: header
+            x-amazon-apigateway-authtype: custom
+            x-amazon-apigateway-authorizer:
+              type: token
+              authorizerUri:
+                Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${AuthorizerFunc.Arn}/invocations
+              authorizerResultTtlInSeconds: 5
+        paths:
+          /vehicles:
+            get:
+              x-amazon-apigateway-integration:
+                httpMethod: POST
+                type: aws_proxy
+                uri:
+                  !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${VehiclesLambda.Arn}/invocations
+              responses: {}
+              security:
+                - test-authorizer: []
+          /bookings:
+            get:
+              x-amazon-apigateway-integration:
+                httpMethod: POST
+                type: aws_proxy
+                uri:
+                  !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${BookingsLambda.Arn}/invocations
+              responses: {}
+  VehiclesLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub VehiclesLambda-${Environment}
+      Handler: index.handler
+      Runtime: nodejs4.3 
+      CodeUri: vehicles
+      MemorySize: 128 
+      Timeout: 30
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess  
+      Events:
+        MyEndpoint:
+          Type: Api 
+          Properties:
+            Path: /vehicles
+            Method: GET
+            RestApiId:
+              Ref: HelloAPI
+
+  BookingsLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub BookingsLambda-${Environment}
+      Handler: index.handler
+      Runtime: nodejs4.3
+      CodeUri: bookings
+      MemorySize: 128
+      Timeout: 30
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess
+      Events:
+        MyEndpoint:
+          Type: Api
+          Properties:
+            Path: /bookings
+            Method: GET
+            RestApiId:
+              Ref: HelloAPI
+
+  AuthorizerFunc:
+      Type: AWS::Serverless::Function
+      Properties:
+        Handler: authorizer.authorizer
+        Runtime: nodejs4.3
+        CodeUri: ./authorizer
+
+  AuthorizerFuncPerm:
+      Type: AWS::Lambda::Permission
+      DependsOn:
+        - HelloAPI
+        - AuthorizerFunc
+      Properties:
+        Action: lambda:InvokeFunction
+        FunctionName:
+          Ref: AuthorizerFunc
+        Principal: apigateway.amazonaws.com
+
+
+

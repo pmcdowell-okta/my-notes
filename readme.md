@@ -35,11 +35,14 @@ Example I used to get me started with AWS SAM
 [More Simple Examples of using SAM / Cloudformation](./awsSam2) <br/>
 SAM takes a while to understand, still learning, refined what I was workign with.
 
+[AWS ApiGateway, Anything goes Authorizer](./awsAnythingGoesAuthorizer) <br/>
+A Authorizer for Allowing/Denying Anything, for test
+
 [AWS SAM/Cloudformation for Okta Rental Backend](./awsSamOktaRental) <br/>
 Example of how to use SAM/Cloudformation to deploy API Gateway on Amazon AWS **Will Add Authorizer soon**
 
-[AWS ApiGateway, Anything goes Authorizer](./awsAnythingGoesAuthorizer) <br/>
-A Authorizer for Allowing/Denying Anything, for test
+[AWS SAM/Cloudformation for Okta Rental Backend w/ Authorizer](./awsOktaRentalWithAuthorizer) <br/>
+Combining the above two examples, API Gateway w/ an Authorizer
 
 ### Angular
 
