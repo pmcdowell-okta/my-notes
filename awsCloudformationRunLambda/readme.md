@@ -38,5 +38,14 @@ Resources:
     Type: Custom::test
     Properties: 
       ServiceToken: arn:aws:lambda:us-east-1:761861444952:function:runOnce
-#      Input: some input
+#      OptionalParamater : "OptionalParamaeterPassed"
+```
+
+#### Optional Parameters are passed to Lambda like this:
+
+``` 
+// From event, so event.ResourceProperties.key1 would be the value
+
+ResourceProperties: 
+{ key1: 'theKeyYouPassed',
 ```
