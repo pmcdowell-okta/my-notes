@@ -49,6 +49,9 @@ Now get **Fancy** create a new **[LaunchStack]** Button on your code, and share 
 
 [Run Lambda Function in Cloudformation Template](./awsCloudformationRunLambda) <br/>
 Run a Lambda Function from your SAM Cloudformation Teamplate **(Hard to figure out)**
+
+[Capture output from Custom Resource](./awsCustomResourceOutput) <br/>
+Capture the output from a Custom Resource (lambda in this case)
  
 ### Angular
 
