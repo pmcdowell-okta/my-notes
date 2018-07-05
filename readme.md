@@ -52,6 +52,10 @@ Run a Lambda Function from your SAM Cloudformation Teamplate **(Hard to figure o
 
 [Capture output from Custom Resource](./awsCustomResourceOutput) <br/>
 Capture the output from a Custom Resource (lambda in this case)
+
+[Create Lambda with Role (YAML)](./awsCloudformationInlineLambdaWithRole) <br/>
+Create an in-line Lambda function, and configure Role
+
  
 ### Angular
 
