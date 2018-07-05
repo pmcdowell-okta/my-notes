@@ -13,12 +13,13 @@ Transform: AWS::Serverless-2016-10-31
 Description: Can you make a Lambda Function run
 
 Outputs:
-      Status:
+      NameOfOurVariable:
         Value:
           Fn::GetAtt:
           - test
           - key
 # The resource is called test, the value we are getting is called key          
+# The value is called key, Key is what we are looking for          
 
 Resources:
   test:

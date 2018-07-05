@@ -56,6 +56,8 @@ Capture the output from a Custom Resource (lambda in this case)
 [Create Lambda with Role (YAML)](./awsCloudformationInlineLambdaWithRole) <br/>
 Create an in-line Lambda function, and configure Role
 
+[Custom Resource Orchestration](./awsCloudformationCustomResourceOrchestration) <br/>
+Run Custom Resource, then take output and pass to another Custom Resource
  
 ### Angular
 
