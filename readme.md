@@ -45,7 +45,11 @@ Example of how to use SAM/Cloudformation to deploy API Gateway on Amazon AWS **W
 Combining the above two examples, API Gateway w/ an Authorizer
 
 [AWS LaunchStack and Share!](./awsLaunchStack) <br/>
-Now get **Fancy** create a new **[LaunchStack]** Button on your code, and share your code 
+Now get **Fancy** create a new **[LaunchStack]** Button on your code, and share your code
+
+[Run Lambda Function in Cloudformation Template](./awsCloudformationRunLambda) <br/>
+Run a Lambda Function from your SAM Cloudformation Teamplate **(Hard to figure out)**
+ 
 ### Angular
 
 [Angular Notes](./angularNotes) <br/>
