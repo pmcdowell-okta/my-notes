@@ -102,6 +102,9 @@ Common Commands you should know. *But often forget*
 [Delete all S3 Buckets](./amazonDeleteS3Buckets) <br/>
 *Use at your own Risk*, but I used this often for testing
 
+[Delete Buckets with Versioning](./awsS3DeleteBucketsWithVersioning) <br/>
+It's a pain deleting buckets with Versioning, this helped me.
+
 ### PHP
 
 [PHP Jwt Decode](./phpDecodeJwt) <br/>
