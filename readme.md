@@ -35,6 +35,9 @@ Example I used to get me started with AWS SAM
 [More Simple Examples of using SAM / Cloudformation](./awsSam2) <br/>
 SAM takes a while to understand, still learning, refined what I was workign with.
 
+[Okta Guest Account  SAM / Cloudformation](./awsSamOktaGuest) <br/>
+Creates a Lambda and API Gateway to log a user in as a Guest
+
 [AWS ApiGateway, Anything goes Authorizer](./awsAnythingGoesAuthorizer) <br/>
 A Authorizer for Allowing/Denying Anything, for test
 

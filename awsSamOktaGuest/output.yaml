@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Okta Guest Login
+Outputs:
+  ExampleAPIUrl:
+    Value:
+      Fn::Sub: https://${HelloAPI}.execute-api.${AWS::Region}.amazonaws.com/${Environment}/
+Parameters:
+  Environment:
+    Default: dev
+    Description: Create a Lambda Function that will login Okta Guest
+    Type: String
+Resources:
+  HelloAPI:
+    Properties:
+      DefinitionBody:
+        info:
+          title:
+            Ref: AWS::StackName
+        paths:
+          /guest:
+            get:
+              responses: {}
+              x-amazon-apigateway-integration:
+                httpMethod: POST
+                type: aws_proxy
+                uri:
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${OktaGuestLogin.Arn}/invocations
+        swagger: 2.0
+      StageName:
+        Fn::Sub: ${Environment}
+    Type: AWS::Serverless::Api
+  OktaGuestLogin:
+    Properties:
+      CodeUri: s3://okta911/dfd26e1e50faa033e61eae43b6ea59e3
+      Events:
+        MyEndpoint:
+          Properties:
+            Method: GET
+            Path: /guest
+            RestApiId:
+              Ref: HelloAPI
+          Type: Api
+      Handler: index.handler
+      MemorySize: 128
+      Policies:
+      - AWSLambdaBasicExecutionRole
+      - AmazonDynamoDBFullAccess
+      Runtime: nodejs4.3
+      Timeout: 30
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
