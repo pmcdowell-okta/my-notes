@@ -29,6 +29,9 @@ Working with Okta On Premise Agent, and using HTTP(s), this step is required.
 
 ### AWS SAM (Server Application Model)
 
+##### Generate test events from SAM:
+`sam local generate-event help` *Lists all options*
+
 [Getting going with SAM](./awsSam) <br/>
 Example I used to get me started with AWS SAM
 
@@ -72,6 +75,9 @@ Getting started with Angular 5-ish. Notes to get me going
 Switch User Profile AWS CLI: `export AWS_PROFILE=user`
 
 ### Amazon Lambda
+
+[Testing lambdas locally with lambda-local](./awsLambdaTest) <br/>
+How to test your lambda function locally
 
 [Amazon Upload Basic Lambda](./amazonLambdaUpload) <br/>
 Upload a basic Lambda Function using AWS CLI.
