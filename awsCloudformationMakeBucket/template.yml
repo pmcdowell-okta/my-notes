@@ -1,0 +1,41 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: newmakebucket
+Parameters:
+  Environment:
+    Type: String
+    Default: dev
+  StageName:
+    Type: String
+    Default: prod
+    Description: Testing new makebucket
+  oktaOrg:
+    Type: String
+    Description: Name of Okta Org
+  bucketname:
+    Type: String
+    Description: name of bucket
+
+Resources:
+  creates3bucketlambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: setups3bucket
+      MemorySize: 512
+      Timeout: 300
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess
+        - AmazonS3FullAccess
+
+  DeploymentCustomResource:
+    Type: Custom::AppConfiguration
+    Properties:
+      ServiceToken: !GetAtt creates3bucketlambda.Arn
+      oktaOrg:
+        !Ref oktaOrg
+      bucketname:
+        !Ref bucketname
+

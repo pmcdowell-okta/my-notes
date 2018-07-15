@@ -64,6 +64,9 @@ Create an in-line Lambda function, and configure Role
 
 [Custom Resource Orchestration](./awsCloudformationCustomResourceOrchestration) <br/>
 Run Custom Resource, then take output and pass to another Custom Resource
+
+[Create S3 Bucket with URL for Okta Org](./awsCloudformationMakeBucket) <br/>
+Create S3 Bucket, make Okta login widget page
  
 ### Angular
 
