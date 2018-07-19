@@ -67,7 +67,11 @@ Run Custom Resource, then take output and pass to another Custom Resource
 
 [Create S3 Bucket with URL for Okta Org](./awsCloudformationMakeBucket) <br/>
 Create S3 Bucket, make Okta login widget page
- 
+
+### node.js
+
+[Recursively install packages](https://github.com/emgeee/recursive-install#readme) <br/>
+When I have multiple directories of package (like Lambdas) I use npm-recursive-install
 ### Angular
 
 [Angular Notes](./angularNotes) <br/>
