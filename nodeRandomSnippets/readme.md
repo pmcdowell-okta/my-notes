@@ -33,7 +33,17 @@ http.createServer(function (req, res) {
 })
 ```
 
-##### Environment variables (put your keys in here)
+##### Environment variables (*put your keys in here*)
 ``` 
 process.env.oktaOrg
+```
+
+##### Promises func (*this is how I make all my functions*)
+``` 
+$FUNCTIONNAME$ = function ( requestObj ) {
+    return new Promise ( (resolve, reject)=> {
+
+        resolve ( requestObj)
+    })
+}
 ```
