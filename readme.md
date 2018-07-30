@@ -32,6 +32,9 @@ Working with Okta On Premise Agent, and using HTTP(s), this step is required.
 ##### Generate test events from SAM:
 `sam local generate-event help` *Lists all options*
 
+[AWS Sample Templates](https://s3.amazonaws.com/cloudformation-examples-us-east-1/AWSCloudFormation-samples.zip) <br/>
+Lots of Sample Templates, you'll need them as a reference
+
 [Getting going with SAM](./awsSam) <br/>
 Example I used to get me started with AWS SAM
 
@@ -69,6 +72,12 @@ Run Custom Resource, then take output and pass to another Custom Resource
 Create S3 Bucket, make Okta login widget page
 
 ### node.js
+
+[Random Code Snippets](./nodeRandomSnippets) <br/>
+Random Code snippets I use when I forget stuff
+
+[How I test my package with Docker](https://github.com/pmcdowell-okta/Dockerized-AWSCLI) <br/>
+This is how I use Docker to test github releases
 
 [Recursively install packages](https://github.com/emgeee/recursive-install#readme) <br/>
 When I have multiple directories of package (like Lambdas) I use npm-recursive-install
@@ -165,6 +174,7 @@ Goto Beginning of Line: `[CTRL-a]` *MacOS*
 `
 ### Intellij / JetBrains
 
+**Increase Selected Text** `[OPPTOIN] + [UP ARROW]  <br/>
 **Surround code With** `[OPPTOIN] + [COMMAND] + t ` <br/>
 **Join lines** `[CTRL] + [SHIFT] +j` <br/>
 **Select words w/ keyboard** `[Shift]+[Option] (left/right) arrow` <br/>
