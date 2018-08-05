@@ -47,3 +47,27 @@ $FUNCTIONNAME$ = function ( requestObj ) {
     })
 }
 ```
+
+#### Readfile
+```
+fs.readFile('./saml.txt', function read(err, data) {
+    if (err) {
+        throw err;
+    }
+}
+```
+
+#### Base64 Decode
+``` 
+        let buff = new Buffer(body, 'base64'); //base 64decode
+```
+
+####
+
+#### Url Decode 
+``` 
+var decode = require('urldecode')
+
+body = decode(body) //url decode
+```
+

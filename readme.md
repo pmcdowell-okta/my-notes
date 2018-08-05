@@ -174,7 +174,7 @@ Goto Beginning of Line: `[CTRL-a]` *MacOS*
 `
 ### Intellij / JetBrains
 
-**Increase Selected Text** `[OPPTOIN] + [UP ARROW]  <br/>
+**Increase Selected Text** `[OPPTOIN] + [UP ARROW]`  <br/>
 **Surround code With** `[OPPTOIN] + [COMMAND] + t ` <br/>
 **Join lines** `[CTRL] + [SHIFT] +j` <br/>
 **Select words w/ keyboard** `[Shift]+[Option] (left/right) arrow` <br/>
