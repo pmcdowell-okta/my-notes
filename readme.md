@@ -166,10 +166,10 @@ Script to make certificates
 
 Do a infinite For/Loop : `while true ; do echo "do this"; done
 
-Make symbolic Link : `ln -s /Users/mickeymouse/Box\ Sync/c-\=Code\=-/ code
+Make symbolic Link : `ln -s /Users/mickeymouse/Box\ Sync/c-\=Code\=-/` <br/>
 `
 Reverse looking previous coommands: `[CTRL-r]` *MacOS* *(Thanks Joël for this trick)* <br/>
-Goto Beginning of Line: `[CTRL-a]` *MacOS*
+Goto Beginning of Line: `[CTRL-a]` *MacOS* <br/>
 Goto End of Line: `[CTRL-e]` *MacOS*
 `
 ### Microsoft Remote Desktop
