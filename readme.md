@@ -168,15 +168,20 @@ Do a infinite For/Loop : `while true ; do echo "do this"; done
 
 Make symbolic Link : `ln -s /Users/mickeymouse/Box\ Sync/c-\=Code\=-/ code
 `
-
 Reverse looking previous coommands: `[CTRL-r]` *MacOS* *(Thanks Joël for this trick)* <br/>
 Goto Beginning of Line: `[CTRL-a]` *MacOS*
 `
+### Microsoft Remote Desktop
+
+**CTRL**+**ALT**+**DEL** = `FM+CTRL+OPTION+COMMAND+delete`
+
+
 ### Intellij / JetBrains
 
-**Increase Selected Text** `[OPPTOIN] + [UP ARROW]`  <br/>
-**Surround code With** `[OPPTOIN] + [COMMAND] + t ` <br/>
+**Increase Selected Text** `[OPTOIN] + [UP ARROW]`  <br/>
+**Surround code With** `[OPTOIN] + [COMMAND] + t ` <br/>
 **Join lines** `[CTRL] + [SHIFT] +j` <br/>
 **Select words w/ keyboard** `[Shift]+[Option] (left/right) arrow` <br/>
 **Vertical Selection CMD.exe style**  `[Option] , drag cursor` <br/>
 **Multi Cursor**  `[Option] + [Shift] , Click Away` <br/>
+
