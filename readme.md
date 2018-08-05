@@ -167,13 +167,13 @@ Script to make certificates
 Do a infinite For/Loop : `while true ; do echo "do this"; done
 
 Make symbolic Link : `ln -s /Users/mickeymouse/Box\ Sync/c-\=Code\=-/` <br/>
-Reverse looking previous coommands: `[CTRL-r]` *MacOS* *(Thanks Joël for this trick)*` <br/>
+Reverse looking previous coommands: `[CTRL-r]` *MacOS* *(Thanks Joël for this trick)* <br/>
 Goto Beginning of Line: `[CTRL-a]` *MacOS* <br/>
 Goto End of Line: `[CTRL-e]` *MacOS*
 `
 ### Microsoft Remote Desktop
 
-**CTRL**+**ALT**+**DEL** = `FM+CTRL+OPTION+COMMAND+delete`
+**CTRL**+**ALT**+**DEL** = `FM+CTRL+OPTION+delete`
 
 
 ### Intellij / JetBrains
