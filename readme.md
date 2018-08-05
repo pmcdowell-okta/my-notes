@@ -178,8 +178,8 @@ Goto End of Line: `[CTRL-e]` *MacOS*
 
 ### Intellij / JetBrains
 
-**Increase Selected Text** `[OPTOIN] + [UP ARROW]`  <br/>
-**Surround code With** `[OPTOIN] + [COMMAND] + t ` <br/>
+**Increase Selected Text** `[OPTION] + [UP ARROW]`  <br/>
+**Surround code With** `[OPTION] + [COMMAND] + t ` <br/>
 **Join lines** `[CTRL] + [SHIFT] +j` <br/>
 **Select words w/ keyboard** `[Shift]+[Option] (left/right) arrow` <br/>
 **Vertical Selection CMD.exe style**  `[Option] , drag cursor` <br/>
