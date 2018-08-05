@@ -170,6 +170,7 @@ Make symbolic Link : `ln -s /Users/mickeymouse/Box\ Sync/c-\=Code\=-/ code
 `
 Reverse looking previous coommands: `[CTRL-r]` *MacOS* *(Thanks Joël for this trick)* <br/>
 Goto Beginning of Line: `[CTRL-a]` *MacOS*
+Goto End of Line: `[CTRL-e]` *MacOS*
 `
 ### Microsoft Remote Desktop
 
