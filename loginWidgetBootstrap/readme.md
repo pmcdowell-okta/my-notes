@@ -1,3 +1,12 @@
+### Bootstrap the login widget w/ Auth SDK
+
+*Sometimes*, the login widget doesn't do quite what you want, this bit of code
+renders some HTML that looks like the Login Widget, and then get the stateToken
+from an Authentication and Bootstraps the login widget, so you can handle MFA or
+what ever might be required.
+
+##### In this use case, I needed to run the authentication twice, that was just
+junk code, but I wanted to share some sample code.
 
 ```
 
