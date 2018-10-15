@@ -4,6 +4,8 @@
 
 I am using lambda-local https://www.npmjs.com/package/lambda-local
 
+**Install it like this:** `npm install -g lambda-local`
+
 They have examples on their website, but here is a basic one that works,
 it is based on the stock lambda that Amazon Creates for you
 
